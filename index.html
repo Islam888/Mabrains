@@ -8,7 +8,6 @@
     <!--     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/bootstap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -33,10 +32,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#slides" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="#services" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">About</a>
@@ -67,7 +66,7 @@
                 <div class="carousel-caption">
                     <h1 class="display-2">Mabrains</h1>
                     <h3>Your Gate To The Future.</h3>
-                    <button t   ype="button" class="btn btn-outline-light btn-lg">ABOUT US</button>
+                    <button type="button" class="btn btn-outline-light btn-lg">ABOUT US</button>
                     <button type="button" class="btn btn-primary btn-lg">OUR WORK</button>
                 </div>
             </div>
@@ -92,47 +91,47 @@
         </div>
     </div>
     <!--Services section-->
-    <div class="container-fluid padding">
+    <div id="services" class="container-fluid padding">
         <div class="row text-center padding">
-            <h2 class="col-12">Our Services</h2>
+            <h2 class="col-12">Services</h2>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-chart-bar fa-3x"></i>
+                <i class="fas fa-chart-bar"></i>
                 <h3>Perspective Analysis</h3>
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-chart-pie fa-3x"></i>
+                <i class="fas fa-chart-pie"></i>
                 <h3>Predictive Analysis</h3>
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-file-alt fa-3x"></i>
+                <i class="fas fa-file-alt"></i>
                 <h3>Data Analysis</h3>
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-clock fa-3x"></i>
+                <i class="fas fa-clock"></i>
                 <h3>Real Time Analysis</h3>
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-stethoscope fa-3x"></i>
+                <i class="fas fa-stethoscope"></i>
                 <h3>Diagnostic Analysis</h3>
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-shopping-cart fa-3x"></i>
+                <i class="fas fa-shopping-cart"></i>
                 <h3>Market Basket Analysis</h3>
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-hand-holding-usd fa-3x"></i>
+                <i class="fas fa-hand-holding-usd"></i>
                 <h3>Banking</h3>
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-heartbeat fa-3x"></i>
+                <i class="fas fa-heartbeat"></i>
                 <h3>Health Care</h3>
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-tv fa-3x"></i>
+                <i class="fas fa-tv"></i>
                 <h3>Media</h3>
             </div>
             <div class="col-sm-6 col-md-12">
-                <i class="fas fa-cogs fa-3x"></i>
+                <i class="fas fa-cogs"></i>
                 <h3>Industries</h3>
             </div>
         </div>
@@ -151,8 +150,8 @@
                 <br>
                 <a href="#/" class="btn btn-primary">Learn more</a>
             </div>
-            <div class="col-lg-6">
-                <img src="img/robot.jpeg" class="img-fluid w-100" alt="">
+            <div class="col-lg-6 d-none d-lg-inline">
+                <img src="img/robot.jpeg" class="img-fluid big-border" alt="">
             </div>
         </div>
         <hr class="my-4">
@@ -224,25 +223,25 @@
                 <div class="collapse" id="hire-form" data-parent="#accordion">
                     <div class="container-fluid padding">
                         <div class="row">
-                            <form action="" class="col-12">
+                            <form class="col-12">
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
-                                        <label for="firstName">First Name</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="First name">
+                                        <label for="firstNameHire">First Name</label>
+                                        <input type="text" class="form-control" id="firstNameHire" placeholder="First name">
                                     </div>
                                     <div class="form-group col-sm-6">
-                                        <label for="lastName">Last Name</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                                        <label for="lastNameHire">Last Name</label>
+                                        <input type="text" class="form-control" id="lastNameHire" placeholder="Last name">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email" placeholder="name@example.com">
+                                        <label for="emailHire">Email</label>
+                                        <input type="text" class="form-control" id="emailHire" placeholder="name@example.com">
                                     </div>
                                     <div class="form-group col-sm-6">
-                                        <label for="phoneNumber">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phoneNumber" placeholder="123-456-7890">
+                                        <label for="phoneNumberHire">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phoneNumberHire" placeholder="123-456-7890">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -262,22 +261,22 @@
                             <form class="col-12">
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
-                                        <label for="firstName">First Name</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="First name">
+                                        <label for="firstNameApply">First Name</label>
+                                        <input type="text" class="form-control" id="firstNameApply" placeholder="First name">
                                     </div>
                                     <div class="form-group col-sm-6">
-                                        <label for="lastName">Last Name</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                                        <label for="lastNameApply">Last Name</label>
+                                        <input type="text" class="form-control" id="lastNameApply" placeholder="Last name">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email" placeholder="name@example.com">
+                                        <label for="emailApply">Email</label>
+                                        <input type="text" class="form-control" id="emailApply" placeholder="name@example.com">
                                     </div>
                                     <div class="form-group col-sm-6">
-                                        <label for="phoneNumber">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phoneNumber" placeholder="123-456-7890">
+                                        <label for="phoneNumberApply">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phoneNumberApply" placeholder="123-456-7890">
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -350,19 +349,31 @@
                 </div>
             </div>
         </div>
+        <hr class="my-4">
+    </div>
         <!--Connect section-->
         <div class="container-fluid padding">
             <div class="row text-center padding">
-               <div class="col-12">
-                   <h2>Connect</h2>
-               </div>
-               <div class="col-12 social padding">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-               </div>
+                <div class="col-12">
+                    <h2>Connect</h2>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <!--footer section-->
@@ -370,7 +381,8 @@
             <div class="container-fluid padding">
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <img src="img/logo2.png" alt=""><h4 class="d-inline">Mabrains</h4>
+                        <img src="img/logo2.png" alt="">
+                        <h4 class="d-inline">Mabrains</h4>
                         <hr class="light">
                         <p>123-456-7890</p>
                         <p>connect@mabrains.com</p>
@@ -388,15 +400,27 @@
                         <hr class="light">
                         <h5>Website Map</h5>
                         <hr class="light">
-                        <p><a href="#" class="nav-link">Home</a></p>
-                        <p><a href="#" class="nav-link">Services</a></p>
-                        <p><a href="#" class="nav-link">About</a></p>
-                        <p><a href="#" class="nav-link">Applications</a></p>
-                        <p><a href="#" class="nav-link">Contact Us</a></p>
-                        <p><a href="#" class="nav-link">Articles</a></p>
+                        <p>
+                            <a href="#" class="nav-link">Home</a>
+                        </p>
+                        <p>
+                            <a href="#" class="nav-link">Services</a>
+                        </p>
+                        <p>
+                            <a href="#" class="nav-link">About</a>
+                        </p>
+                        <p>
+                            <a href="#" class="nav-link">Applications</a>
+                        </p>
+                        <p>
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="#" class="nav-link">Articles</a>
+                        </p>
                     </div>
                     <div class="col-12">
-                        <hr class="light">
+                        <hr class="light-100">
                         <h5>&copy; 2018 Mabrains Limited Liability Company</h5>
                     </div>
                 </div>
