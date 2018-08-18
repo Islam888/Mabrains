@@ -203,7 +203,7 @@ footer a {
     height: 100%;
   }
   #fixed {
-    background-image: url('img/app1.jpg');
+    background-image: url('./img/app1.jpg');
     opacity: 0.3;
     position: fixed;
     display: block;
