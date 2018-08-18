@@ -3,8 +3,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Karla', sans-serif;
-    color: white;
-    background: #000;
+    color: black;
+    background: white;
 }
 
 .navbar {
@@ -222,6 +222,12 @@ footer a {
   [class*="col-"] {
       padding: 1rem;
   }
+
+  canvas {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
 
 @media (max-width: 992px) {
     .social a {
