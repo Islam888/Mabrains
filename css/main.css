@@ -231,6 +231,12 @@ footer a {
     height: 70vh;
 }
 
+  canvas {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
 @media (max-width: 992px) {
     .social a {
         font-size: 1.2em;
