@@ -8,6 +8,7 @@
     <!--     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -16,10 +17,14 @@
         crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy.plugins.min.js"></script>
+
     <title>Mabrains</title>
 </head>
 
 <body>
+    <button id="scollTotopBtn" title="Go to top"><div id="arrow"></div></button>
     <!--Navbar section-->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
@@ -38,16 +43,16 @@
                         <a href="#services" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Apps</a>
+                        <a href="#apps" class="nav-link">Apps</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contacts Us</a>
+                        <a href="#contactUs" class="nav-link">Contacts Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Articles</a>
+                        <a href="#articles" class="nav-link">Articles</a>
                     </li>
                 </ul>
             </div>
@@ -66,8 +71,8 @@
                 <div class="carousel-caption">
                     <h1 class="display-2">Mabrains</h1>
                     <h3>Your Gate To The Future.</h3>
-                    <button type="button" class="btn btn-outline-light btn-lg">ABOUT US</button>
-                    <button type="button" class="btn btn-primary btn-lg">OUR WORK</button>
+                    <a href="#about" class="btn btn-outline-light btn-lg">ABOUT US</a>
+                    <a href="#apps" class="btn btn-primary btn-lg">OUR WORK</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -95,50 +100,63 @@
         <div class="row text-center padding">
             <h2 class="col-12">Services</h2>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-chart-bar"></i>
-                <h3>Perspective Analysis</h3>
+                <img data-src="img/offer1.png" class="lazy" alt="">
+                <!-- <i class="fas fa-chart-bar"></i>
+                <h3>Perspective Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-chart-pie"></i>
-                <h3>Predictive Analysis</h3>
+                    <img data-src="img/offer2.png" class="lazy"  alt="">
+                <!-- <i class="fas fa-chart-pie"></i>
+                <h3>Predictive Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-file-alt"></i>
-                <h3>Data Analysis</h3>
+                    <img data-src="img/offer3.png" class="lazy"  alt="">
+                <!-- <i class="fas fa-file-alt"></i>
+                <h3>Data Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-clock"></i>
-                <h3>Real Time Analysis</h3>
+                    <img data-src="img/offer4.png" class="lazy"  alt="">
+                <!-- <i class="fas fa-clock"></i>
+                <h3>Real Time Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-stethoscope"></i>
-                <h3>Diagnostic Analysis</h3>
+                    <img data-src="img/offer5.png" class="lazy" alt="">
+                <!-- <i class="fas fa-stethoscope"></i>
+                <h3>Diagnostic Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-shopping-cart"></i>
-                <h3>Market Basket Analysis</h3>
+                    <img data-src="img/offer6.png" class="lazy" alt="">
+                <!-- <i class="fas fa-shopping-cart"></i>
+                <h3>Market Basket Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-hand-holding-usd"></i>
-                <h3>Banking</h3>
+                    <img data-src="img/offer7.png" class="lazy" alt="">
+                <!-- <i class="fas fa-hand-holding-usd"></i>
+                <h3>Banking</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-heartbeat"></i>
-                <h3>Health Care</h3>
+                    <img data-src="img/offer8.png" class="lazy" alt="">
+                <!-- <i class="fas fa-heartbeat"></i>
+                <h3>Health Care</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                <i class="fas fa-tv"></i>
-                <h3>Media</h3>
+                    <img data-src="img/offer9.png" class="lazy" alt="">
+               <!--  <i class="fas fa-tv"></i>
+                <h3>Media</h3> -->
             </div>
-            <div class="col-sm-6 col-md-12">
-                <i class="fas fa-cogs"></i>
-                <h3>Industries</h3>
+            <div class="col-sm-6 col-md-4">
+                    <img data-src="img/offer10.png" class="lazy" alt="">
+                <!-- <i class="fas fa-cogs"></i>
+                <h3>Industries</h3> -->
+            </div>
+            <div class="col-sm-6 col-md-4">
+                    <img data-src="img/offer11.png" class="lazy" alt="">
             </div>
         </div>
         <hr class="my-4">
     </div>
     <!--About section-->
-    <div class="container-fluid padding">
+    <div id="about" class="container-fluid padding">
         <div class="row padding">
             <div class="col-lg-6">
                 <h2>About</h2>
@@ -151,7 +169,7 @@
                 <a href="#/" class="btn btn-primary">Learn more</a>
             </div>
             <div class="col-lg-6 d-none d-lg-inline">
-                <img src="img/robot.jpeg" class="img-fluid big-border" alt="">
+                <img src="img/3.png" class="img-fluid big-border" alt="">
             </div>
         </div>
         <hr class="my-4">
@@ -165,7 +183,7 @@
         </div>
     </figure>
     <!--Applications section-->
-    <div class="container-fluid padding">
+    <div id="apps" class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
                 <h2 class="display-4">Apps</h2>
@@ -177,7 +195,7 @@
         <div class="row padding">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/app1.jpg" class="card-img-top" alt="">
+                    <img src="img/1.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <h4 class="card-title">App 1</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -187,7 +205,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/app1.jpg" class="card-img-top" alt="">
+                    <img src="img/2.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <h4 class="card-title">App 2</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -197,7 +215,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/app1.jpg" class="card-img-top" alt="">
+                    <img src="img/3.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <h4 class="card-title">App 3</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -208,7 +226,7 @@
         </div>
     </div>
     <!--Contact Us section-->
-    <div class="container-fluid padding" id="accordion">
+    <div id="contactUs" class="container-fluid padding" id="accordion">
         <div class="row padding">
             <div class="col-lg-6">
                 <h2>Contact Us</h2>
@@ -220,7 +238,7 @@
                 <br>
                 <button class="btn btn-primary" data-toggle="collapse" data-target="#hire-form">Hire Us</button>
                 <button class="btn btn-primary" data-toggle="collapse" data-target="#apply-form">Apply for Job</button>
-                <div class="collapse" id="hire-form" data-parent="#accordion">
+                <div class="collapse" id="hire-form" data-parent="#contactUs">
                     <div class="container-fluid padding">
                         <div class="row">
                             <form class="col-12">
@@ -255,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="apply-form" data-parent="#accordion">
+                <div class="collapse" id="apply-form" data-parent="#contactUs">
                     <div class="container-fluid padding">
                         <div class="row">
                             <form class="col-12">
@@ -302,13 +320,13 @@
                 </div>
             </div>
             <div class="col-lg-6 d-none d-lg-inline">
-                <img src="img/robot.jpeg" class="img-fluid w-100" alt="">
+                <img src="img/2.png" class="img-fluid w-100" alt="">
             </div>
         </div>
         <hr class="my-4">
     </div>
     <!--Articles section-->
-    <div class="container-fluid padding">
+    <div id="articles" class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
                 <h2 class="display-4">Articles</h2>
@@ -320,7 +338,7 @@
         <div class="row padding">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/app1.jpg" class="card-img-top" alt="">
+                    <img src="img/1.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Article 1</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -330,7 +348,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/app1.jpg" class="card-img-top" alt="">
+                    <img src="img/2.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Article 2</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -340,7 +358,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/app1.jpg" class="card-img-top" alt="">
+                    <img src="img/3.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Article 3</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -351,84 +369,74 @@
         </div>
         <hr class="my-4">
     </div>
-        <!--Connect section-->
+
+    <!--footer section-->
+    <footer>
         <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <div class="col-12">
-                    <h2>Connect</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="img/logo2.png" alt="">
+                    <h4 class="d-inline">Mabrains</h4>
+                    <hr class="light">
+                    <p>123-456-7890</p>
+                    <p>connect@mabrains.com</p>
+                    <p>Cairo, Egypt</p>
+                    <div class="social">
+                        <h4 class="d-inline">Connect </h4>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-12 social padding">
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-google-plus-g"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Working Hours</h5>
+                    <hr class="light">
+                    <p>Saturday: 9am - 5pm</p>
+                    <p>Thursday: 9am - 5pm</p>
+                    <p>Friday: closed</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Website Map</h5>
+                    <hr class="light">
+                    <p>
+                        <a href="#home" class="nav-link">Home</a>
+                    </p>
+                    <p>
+                        <a href="#services" class="nav-link">Services</a>
+                    </p>
+                    <p>
+                        <a href="#about" class="nav-link">About</a>
+                    </p>
+                    <p>
+                        <a href="#apps" class="nav-link">Apps</a>
+                    </p>
+                    <p>
+                        <a href="#contactus" class="nav-link">Contact Us</a>
+                    </p>
+                    <p>
+                        <a href="#articles" class="nav-link">Articles</a>
+                    </p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy; 2018 Mabrains Limited Liability Company</h5>
                 </div>
             </div>
         </div>
-        <!--footer section-->
-        <footer>
-            <div class="container-fluid padding">
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <img src="img/logo2.png" alt="">
-                        <h4 class="d-inline">Mabrains</h4>
-                        <hr class="light">
-                        <p>123-456-7890</p>
-                        <p>connect@mabrains.com</p>
-                        <p>Cairo, Egypt</p>
-                    </div>
-                    <div class="col-md-4">
-                        <hr class="light">
-                        <h5>Working Hours</h5>
-                        <hr class="light">
-                        <p>Saturday: 9am - 5pm</p>
-                        <p>Thursday: 9am - 5pm</p>
-                        <p>Friday: closed</p>
-                    </div>
-                    <div class="col-md-4">
-                        <hr class="light">
-                        <h5>Website Map</h5>
-                        <hr class="light">
-                        <p>
-                            <a href="#" class="nav-link">Home</a>
-                        </p>
-                        <p>
-                            <a href="#" class="nav-link">Services</a>
-                        </p>
-                        <p>
-                            <a href="#" class="nav-link">About</a>
-                        </p>
-                        <p>
-                            <a href="#" class="nav-link">Applications</a>
-                        </p>
-                        <p>
-                            <a href="#" class="nav-link">Contact Us</a>
-                        </p>
-                        <p>
-                            <a href="#" class="nav-link">Articles</a>
-                        </p>
-                    </div>
-                    <div class="col-12">
-                        <hr class="light-100">
-                        <h5>&copy; 2018 Mabrains Limited Liability Company</h5>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> -->
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/lazyLoading.js"></script>
 </body>
 
 </html>
