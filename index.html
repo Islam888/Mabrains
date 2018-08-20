@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
     <link rel="shortcut icon" href="img/favicon.png">
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -27,7 +27,9 @@
 </head>
 
 <body>
-    <button id="scollTotopBtn" title="Go to top"><div id="arrow"></div></button>
+    <button id="scollTotopBtn" title="Go to top">
+        <div id="arrow"></div>
+    </button>
     <!--Navbar section-->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
@@ -108,52 +110,52 @@
                 <h3>Perspective Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer2.png" class="lazy"  alt="">
+                <img data-src="img/offer2.png" class="lazy" alt="">
                 <!-- <i class="fas fa-chart-pie"></i>
                 <h3>Predictive Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer3.png" class="lazy"  alt="">
+                <img data-src="img/offer3.png" class="lazy" alt="">
                 <!-- <i class="fas fa-file-alt"></i>
                 <h3>Data Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer4.png" class="lazy"  alt="">
+                <img data-src="img/offer4.png" class="lazy" alt="">
                 <!-- <i class="fas fa-clock"></i>
                 <h3>Real Time Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer5.png" class="lazy" alt="">
+                <img data-src="img/offer5.png" class="lazy" alt="">
                 <!-- <i class="fas fa-stethoscope"></i>
                 <h3>Diagnostic Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer6.png" class="lazy" alt="">
+                <img data-src="img/offer6.png" class="lazy" alt="">
                 <!-- <i class="fas fa-shopping-cart"></i>
                 <h3>Market Basket Analysis</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer7.png" class="lazy" alt="">
+                <img data-src="img/offer7.png" class="lazy" alt="">
                 <!-- <i class="fas fa-hand-holding-usd"></i>
                 <h3>Banking</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer8.png" class="lazy" alt="">
+                <img data-src="img/offer8.png" class="lazy" alt="">
                 <!-- <i class="fas fa-heartbeat"></i>
                 <h3>Health Care</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer9.png" class="lazy" alt="">
-               <!--  <i class="fas fa-tv"></i>
+                <img data-src="img/offer9.png" class="lazy" alt="">
+                <!--  <i class="fas fa-tv"></i>
                 <h3>Media</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer10.png" class="lazy" alt="">
+                <img data-src="img/offer10.png" class="lazy" alt="">
                 <!-- <i class="fas fa-cogs"></i>
                 <h3>Industries</h3> -->
             </div>
             <div class="col-sm-6 col-md-4">
-                    <img data-src="img/offer11.png" class="lazy" alt="">
+                <img data-src="img/offer11.png" class="lazy" alt="">
             </div>
         </div>
         <hr class="my-4">
@@ -244,30 +246,40 @@
                 <div class="collapse" id="hire-form" data-parent="#contactUs">
                     <div class="container-fluid padding">
                         <div class="row">
-                            <form id="hire-application" class="col-12">
+                            <form id="hire-application" class="col-12 needs-validation" novalidate>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="firstNameHire">First Name</label>
-                                        <input type="text" class="form-control" id="firstNameHire" placeholder="First name" name="first_name">
+                                        <input type="text" class="form-control" id="firstNameHire" placeholder="First name" name="first_name" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please provide a first name.</div>
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="lastNameHire">Last Name</label>
-                                        <input type="text" class="form-control" id="lastNameHire" placeholder="Last name" name="last_name">
+                                        <input type="text" class="form-control" id="lastNameHire" placeholder="Last name" name="last_name" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please provide a last name.</div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="emailHire">Email</label>
-                                        <input type="text" class="form-control" id="emailHire" placeholder="name@example.com" name="email">
+                                        <input type="text" class="form-control" id="emailHire" placeholder="name@example.com" name="email" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please provide an email address.</div>
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="phoneNumberHire">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phoneNumberHire" placeholder="123-456-7890" name="phone_number">
+                                        <input type="tel" class="form-control" id="phoneNumberHire" placeholder="123-456-7890" name="phone_number" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please provide a phone number.</div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="service">Service Wanted</label>
-                                    <textarea class="form-control" id="service" rows="3" name="service"></textarea>
+                                    <textarea class="form-control" id="service" rows="3" name="service" required></textarea>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback">Please explain service needed.</div>
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" class="btn btn-primary" data-toggle="collapse" data-target="#hire-form" value="Send">
@@ -279,37 +291,46 @@
                 <div class="collapse" id="apply-form" data-parent="#contactUs">
                     <div class="container-fluid padding">
                         <div class="row">
-                            <form id="job-application" class="col-12">
+                            <form id="job-application" class="col-12 needs-validation" novalidate>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="firstNameApply">First Name</label>
-                                        <input type="text" class="form-control" id="firstNameApply" placeholder="First name" name="first_name">
+                                        <input type="text" class="form-control" id="firstNameApply" placeholder="First name" name="first_name" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please provide a first name.</div>
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="lastNameApply">Last Name</label>
-                                        <input type="text" class="form-control" id="lastNameApply" placeholder="Last name" name="last_name">
+                                        <input type="text" class="form-control" id="lastNameApply" placeholder="Last name" name="last_name" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please provide a last name.</div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="emailApply">Email</label>
-                                        <input type="text" class="form-control" id="emailApply" placeholder="name@example.com" name="email">
+                                        <input type="text" class="form-control" id="emailApply" placeholder="name@example.com" name="email" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please provide an email address.</div>
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="phoneNumberApply">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phoneNumberApply" placeholder="123-456-7890" name="phone_number">
+                                        <input type="tel" class="form-control" id="phoneNumberApply" placeholder="123-456-7890" name="phone_number" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please provide a phone number.</div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="selectJob">Select Job</label>
-                                        <select class="form-control" id="selectJob" name="job">
+                                        <select class="form-control" id="selectJob" name="job" required>
                                             <option selected disabled>Select Job</option>
                                             <option>Front-End Developer</option>
                                             <option>Back-End Developer</option>
                                             <option>Artificial Intelligence Engineer</option>
                                         </select>
-
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback">Please select a job.</div>
                                     </div>
                                 </div>
 
@@ -438,9 +459,10 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
     <script src="js/lazyLoading.js"></script>
     <script src="js/emailjs.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
