@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
     <link rel="shortcut icon" href="img/favicon.png">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -242,33 +244,33 @@
                 <div class="collapse" id="hire-form" data-parent="#contactUs">
                     <div class="container-fluid padding">
                         <div class="row">
-                            <form class="col-12">
+                            <form id="hire-application" class="col-12">
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="firstNameHire">First Name</label>
-                                        <input type="text" class="form-control" id="firstNameHire" placeholder="First name">
+                                        <input type="text" class="form-control" id="firstNameHire" placeholder="First name" name="first_name">
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="lastNameHire">Last Name</label>
-                                        <input type="text" class="form-control" id="lastNameHire" placeholder="Last name">
+                                        <input type="text" class="form-control" id="lastNameHire" placeholder="Last name" name="last_name">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="emailHire">Email</label>
-                                        <input type="text" class="form-control" id="emailHire" placeholder="name@example.com">
+                                        <input type="text" class="form-control" id="emailHire" placeholder="name@example.com" name="email">
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="phoneNumberHire">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phoneNumberHire" placeholder="123-456-7890">
+                                        <input type="tel" class="form-control" id="phoneNumberHire" placeholder="123-456-7890" name="phone_number">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="service">Service Wanted</label>
-                                    <textarea class="form-control" id="service" rows="3"></textarea>
+                                    <textarea class="form-control" id="service" rows="3" name="service"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#hire-form">Send</button>
+                                    <input type="submit" class="btn btn-primary" data-toggle="collapse" data-target="#hire-form" value="Send">
                                 </div>
                             </form>
                         </div>
@@ -277,7 +279,7 @@
                 <div class="collapse" id="apply-form" data-parent="#contactUs">
                     <div class="container-fluid padding">
                         <div class="row">
-                            <form class="col-12">
+                            <form id="job-application" class="col-12">
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="firstNameApply">First Name</label>
@@ -312,7 +314,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#apply-form">Send</button>
+                                    <input type="submit" class="btn btn-primary" data-toggle="collapse" data-target="#apply-form" value="Send">
                                 </div>
 
                             </form>
@@ -438,6 +440,7 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/lazyLoading.js"></script>
+    <script src="js/emailjs.js"></script>
 </body>
 
 </html>
