@@ -1,4 +1,5 @@
 window.onload = () => {
+
     //listen to scroll and show the button when scrolling more than 20
     window.onscroll = () => {
         if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
@@ -6,7 +7,6 @@ window.onload = () => {
         } else {
             document.getElementById('scollTotopBtn').style.display = "none";
         }
-       
     }
     var scrollToTopTimeInterval;
     document.getElementById('scollTotopBtn').addEventListener('click', () => {
@@ -15,7 +15,6 @@ window.onload = () => {
         function scrollToTop() {
             document.body.scrollTop -= 50; // For Safari
             document.documentElement.scrollTop -= 50; // For Chrome, Firefox, IE and Opera
-            console.log(document.body.scrollTop,document.documentElement.scrollTop)
             if (document.body.scrollTop === 0 && document.documentElement.scrollTop === 0) {
                 clearInterval(scrollToTopTimeInterval)
             }
@@ -24,4 +23,3 @@ window.onload = () => {
 }
 
 
-    
