@@ -11,4 +11,5 @@
         event.preventDefault();
         emailjs.sendForm('contact_service', 'jobapply_template', this);
     });
+    
 }
