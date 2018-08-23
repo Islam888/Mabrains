@@ -252,6 +252,41 @@ footer a {
     border-bottom: solid transparent 50px;
 }
 
+.active .nav-link {
+    color: #0077B5 !important;
+}
+
+li a {
+    position: relative;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    color: #0077B5 !important;
+}
+
+li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0077B5;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+li a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 /*---Firefox Bug Fix --*/
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
