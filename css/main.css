@@ -7,6 +7,11 @@ body {
     background: white;
 }
 
+.container-fluid {
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
 .navbar-nav li {
     padding-right: 20px;
 }
@@ -14,6 +19,7 @@ body {
 .nav-link {
     font-size: 1.2em !important;
 }
+
 
 .carousel-inner img {
     width: 100%;
@@ -39,6 +45,27 @@ body {
     padding-bottom: 1rem;
 }
 
+.second {
+    top: 60%;
+    color: white;
+    left: 5% !important;
+    text-align: left !important;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.second h1 {
+    text-shadow: none;
+    font-size: 500%;
+    text-transform: uppercase;
+}
+
+.carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: none;
+    padding-bottom: 1rem;
+}
+
 .btn-primary {
     background-color: #6648b1;
     border: 1px solid #6648b1;
@@ -52,6 +79,7 @@ body {
 .padding {
     padding-bottom: 2rem;
 }
+
 
 .welcome {
     max-width: 75%;
@@ -166,9 +194,24 @@ footer a {
 }
 
 .card {
-    
-    max-width: 75%;
+    min-height: 500px;
     margin: auto;
+    position: relative;
+}
+
+.card-body .btn {
+    position: absolute;
+    bottom: 20px;
+}
+
+
+.card-img-top {
+    min-height: 20vw;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #logo {
@@ -184,6 +227,29 @@ footer a {
     width: 0.5em;
     transform: rotate(45deg);
     margin: 0.5em;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 70vh;
+}
+
+
+.articles-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.articles-row {
+    display: flex;
+    flex-wrap: unwrap;
+    position: relative;
+}
+
+.arrow {
+    border-top: solid transparent 50px;
+    border-left: solid seagreen 50px;
+    border-bottom: solid transparent 50px;
 }
 
 /*---Firefox Bug Fix --*/
@@ -228,18 +294,26 @@ footer a {
   [class*="col-"] {
       padding: 1rem;
   }
+@media screen and (max-width: 1090px) {
+    .container-fluid {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
 
-@media (max-width: 992px) {
+  
+@media screen and (max-width: 992px) {
     .social a {
         font-size: 1.2em;
         padding: 0.3rem;
     }
     .card {
-        max-width: 90%;
+        max-width: 100%;
+        min-height: 450px;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .carousel-caption {
         top: 45%;
     }
@@ -270,12 +344,13 @@ footer a {
     .card {
         max-width: 70%;
     }
+    .container-fluid {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
 }
 
-@media (max-width: 576px) {
-    .carousel-caption {
-        top: 40%;
-    }
+@media screen and (max-width: 576px) {
     
     .carousel-caption h1 {
         font-size: 250%;
