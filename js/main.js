@@ -1,13 +1,13 @@
 window.onload = () => {
 
-    //listen to scroll and show the button when scrolling more than 20
+    //listen to scroll and show the scollTotopBtn button when scrolling more than 650 when the navbar slides up.
     window.onscroll = () => {
         if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
             document.getElementById('scollTotopBtn').style.display = "block";
         } else {
             document.getElementById('scollTotopBtn').style.display = "none";
         }
-        //Start animation when element is in view port
+        //Start line animation when element is in view port.
         const services = document.getElementById('services')
         const apis = document.getElementById('apis')
         const contactUs = document.getElementById('contactus')
@@ -34,9 +34,8 @@ window.onload = () => {
             articles.children[1].classList.add('lineMove')
         }
     }
-
+    //listen to click on scollTotopBtn and move to the top of the page.
     document.getElementById('scollTotopBtn').addEventListener('click', () => {
-
         //To make scrolling to top not immediate.
         let scrollToTopTimeInterval = setInterval(scrollToTop, 10)
         function scrollToTop() {
