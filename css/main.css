@@ -1,25 +1,25 @@
 @font-face {
     font-family: 'Audery';
-    src: url("/fonts/Audrey-Normal.otf") format("opentype");
+    src: url("https://islam888.github.io/Mabrains/fonts/Audrey-Normal.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'Audery';
     font-style: oblique;
-    src: url("/fonts/Audrey-NormalOblique.otf") format("opentype");
+    src: url("https://islam888.github.io/Mabrains/fonts/Audrey-NormalOblique.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'Audery';
     font-weight: bold;
-    src: url("/fonts/Audrey-Bold.otf") format("opentype");
+    src: url("https://islam888.github.io/Mabrains/fonts/Audrey-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'Audery';
     font-weight: bold;
     font-style: oblique;
-    src: url("/fonts/Audrey-BoldOblique.otf") format("opentype");
+    src: url("https://islam888.github.io/Mabrains/fonts/Audrey-BoldOblique.otf") format("opentype");
 }
 
 html,
@@ -86,12 +86,12 @@ body {
 }
 
 .first-carousel-img {
-    background: url('/img/item1.jpeg') no-repeat center;
+    background: url('https://islam888.github.io/Mabrains/img/item1.jpeg') no-repeat center;
     background-size: cover;
 }
 
 .second-carousel-img {
-    background: url('/img/item2.jpeg') no-repeat center;
+    background: url('https://islam888.github.io/Mabrains/img/item2.jpeg') no-repeat center;
     background-size: cover;
 }
 
@@ -374,7 +374,7 @@ figure {
 }
 
 #fixed {
-    background-image: url('/img/fixed.jpeg');
+    background-image: url('https://islam888.github.io/Mabrains/img/fixed.jpeg');
     opacity: 0.3;
     position: fixed;
     display: block;
@@ -602,7 +602,7 @@ footer .name {
 }
 
 .about {
-    background: url('/img/about.svg') no-repeat center;
+    background: url('https://islam888.github.io/Mabrains/img/about.svg') no-repeat center;
     background-size: cover;
 }
 
