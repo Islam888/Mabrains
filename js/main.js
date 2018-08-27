@@ -20,7 +20,7 @@ window.onload = () => {
                 bounding.top <= (window.innerHeight || document.documentElement.clientHeight) &&
                 bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
-        };  
+        };
         if (isInViewport(services)) {
             services.children[1].classList.add('lineMove')
         }
@@ -34,9 +34,9 @@ window.onload = () => {
             articles.children[1].classList.add('lineMove')
         }
     }
-    
+
     document.getElementById('scollTotopBtn').addEventListener('click', () => {
-        
+
         //To make scrolling to top not immediate.
         let scrollToTopTimeInterval = setInterval(scrollToTop, 10)
         function scrollToTop() {
@@ -55,15 +55,15 @@ window.onload = () => {
                 e.preventDefault()
                 let element = document.getElementById(e.target.textContent.split(' ').join('').toLowerCase())
                 scrollToElementInterval = setInterval(scrollToElement, 10);
-                function scrollToElement() { 
+                function scrollToElement() {
                     document.body.scrollTop += 50; // For Safari
                     document.documentElement.scrollTop += 50; // For Chrome, Firefox, IE and Opera
-                    if  (element.getBoundingClientRect().top < 30) {
+                    if (element.getBoundingClientRect().top < 30) {
                         clearInterval(scrollToElementInterval)
                     }
                 }
-            }) 
-        }    
+            })
+        }
     }
     window.addEventListener('resize', (e) => {
         if (window.innerWidth <= 768) {

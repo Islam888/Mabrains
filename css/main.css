@@ -84,14 +84,17 @@ body {
     width: 100%;
     height: 70vh;
 }
+
 .first-carousel-img {
     background: url('/img/item1.jpeg') no-repeat center;
     background-size: cover;
 }
+
 .second-carousel-img {
     background: url('/img/item2.jpeg') no-repeat center;
     background-size: cover;
 }
+
 .carousel-caption {
     top: 50%;
     left: 8%;
@@ -397,13 +400,10 @@ figure {
     margin-top: 3rem;
 }
 
-
-
 #apis {
     position: relative;
     margin-top: 3rem;
 }
-
 
 #contactus {
     position: relative;
@@ -412,7 +412,6 @@ figure {
 #articles {
     position: relative;
 }
-
 
 .line-services {
     width: 0;
@@ -617,8 +616,6 @@ p {
     line-height: 1;
 }
 
-
-
 footer h5 {
     font-size: 1rem;
 }
@@ -689,26 +686,23 @@ footer h5 {
     #articles h2,
     #apis h2 {
         font-size: 1.6rem !important;
-}
-.line-services {
-    left: 142px;
-    top: 20px;
-}
-
-.line-apis {
-    left: 105px;
-    top: 20px;
-}
-
-.line-contactUs {
-    left: 180px;
-    top: 20px;
-}
-
-.line-articles {
-    left: 140px;
-    top: 20px;
-}
+    }
+    .line-services {
+        left: 142px;
+        top: 20px;
+    }
+    .line-apis {
+        left: 105px;
+        top: 20px;
+    }
+    .line-contactUs {
+        left: 180px;
+        top: 20px;
+    }
+    .line-articles {
+        left: 140px;
+        top: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -779,7 +773,7 @@ footer h5 {
         font-size: 0.9rem;
         width: 85px;
         height: 25px;
-        padding: 3px;   
+        padding: 3px;
     }
 }
 
@@ -836,12 +830,9 @@ footer h5 {
     .apis-wrapper {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "left" 
-                             "main" 
-                             "right";
+        grid-template-areas: "left" "main" "right";
         grid-gap: 40px;
     }
-
     .navbar-toggler {
         width: 45px;
         height: 32px;
@@ -867,7 +858,6 @@ footer h5 {
         font-size: 18px;
         font-weight: 400;
     }
-
     .line-services {
         left: 120px;
     }
@@ -886,104 +876,98 @@ footer h5 {
     #articles h2,
     #apis h2 {
         font-size: 1.4rem !important;
-}
-footer .name {
-    height: 35px;
-    padding: 8px 0;
-    font-size: 20px;
-    margin-bottom: 1rem;
-}
-.social a {
-    font-size: 1em;
-    padding: 0.5rem;
-}
-
-.social h4 {
-    font-size: 150%;
-}
-.line-services {
-    left: 83px;
-    top: 15px;
-}
-
-.line-apis {
-    left: 48px;
-    top: 15px;
-}
-
-.line-contactUs {
-    left: 113px;
-    top: 15px;
-}
-
-.line-articles {
-    left: 78px;
-    top: 15px;
-}
-.row {
-    margin-right: 0;
-    margin-left: 0;
-}
-#articles .main {
-    grid-area: main;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #DFF1C7;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#articles .right {
-    grid-area: right;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #F2D8F3;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#articles .third {
-    grid-area: third;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #E6EDF5;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-}
-#articles .third,
-#articles .main,
-#articles .right {
-    max-width: 70%;
-    height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.image-3 {
-    width: 100%;
-    height: 180px;
-}
+    }
+    footer .name {
+        height: 35px;
+        padding: 8px 0;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .social a {
+        font-size: 1em;
+        padding: 0.5rem;
+    }
+    .social h4 {
+        font-size: 150%;
+    }
+    .line-services {
+        left: 83px;
+        top: 15px;
+    }
+    .line-apis {
+        left: 48px;
+        top: 15px;
+    }
+    .line-contactUs {
+        left: 113px;
+        top: 15px;
+    }
+    .line-articles {
+        left: 78px;
+        top: 15px;
+    }
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #articles .main {
+        grid-area: main;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #DFF1C7;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #articles .right {
+        grid-area: right;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #F2D8F3;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #articles .third {
+        grid-area: third;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #E6EDF5;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+    #articles .third,
+    #articles .main,
+    #articles .right {
+        max-width: 70%;
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .image-3 {
+        width: 100%;
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1005,5 +989,4 @@ footer .name {
         font-size: 20px;
         margin-bottom: 1rem;
     }
-
 }
