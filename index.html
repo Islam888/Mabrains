@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
     <link rel="shortcut icon" href="img/favicon.png">
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 
@@ -29,9 +26,9 @@
         <div id="arrow"></div>
     </button>
     <!--Navbar section-->
-    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <img id="logo" src="img/logo.png" alt="">
                 <div id="title">
                     <span>MA</span>BRAINS</div>
@@ -41,7 +38,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
@@ -79,11 +76,11 @@
                     <a href="#apis" class="btn btn-primary btn-lg">OUR WORK</a>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="img/item1.jpg" alt="">
+            <div class="carousel-item first-carousel-img">
+                <!-- <img src="img/item1.jpg" alt=""> -->
             </div>
-            <div class="carousel-item">
-                <img src="img/item2.jpg" alt="">
+            <div class="carousel-item second-carousel-img">
+                <!-- <img src="img/item2.jpg" alt=""> -->
             </div>
         </div>
     </div>
@@ -377,16 +374,12 @@
     <!--About section-->
     <div id="aboutus" class="container-fluid padding">
         <div class="row padding">
-            <div class="col-lg-6">
+            <div class="col-12 about">
                 <h2>About us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestiae itaque debitis fugit eaque consequatur!
-                    Rerum ullam fugiat reprehenderit obcaecati! Esse architecto fugit cumque neque distinctio perspiciatis
-                    voluptas consequuntur tempora!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium quas tenetur ab sequi enim
-                    nisi culpa iste, totam nulla doloribus possimus sunt quam laborum et inventore quisquam voluptates repellat!</p>
-            </div>
-            <div class="col-lg-6 d-none d-lg-inline">
-                <img src="img/3.png" class="img-fluid big-border" alt="">
+                <h3>Our Vision</h3>
+                <p class="vision col-sm-12 col-md-10">Mabrains' vision is to build AI systems and solutions that delivers a performance that is on bar with human level intelligence both in specific domains and general intelligence.</p>
+                <h3>Our Mission</h3>
+                <p class="mission col-sm-12 col-md-10">Mabrains will use machine learning, deep learning and AI techniques to improve machine capablities in computer vision, financial world, machine cognition and other aspects of life.</p>
             </div>
         </div>
         <hr class="my-4">
@@ -401,13 +394,14 @@
     </figure>
     <!--Applications section-->
     <div id="apis" class="container-fluid padding">
-        <div class="row padding">
             <h2>APIs</h2>
             <div class="line-apis"></div>
+            <div class="row padding">
+
             <div class="apis-wrapper">
                 <div class="left">
                     <img src="img/scissors.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
+                    <div class="card-inner">
                         <h4 class="card-title">NSFW CLASSIFIER</h4>
                         <p class="card-text">The perfect tool to automatically moderate content.</p>
                         <p class="card-text">Detect and filter any inappropriate content in photos, videos and live streams.</p>
@@ -433,35 +427,33 @@
                 </div>
             </div>
         </div>
+        <hr class="my-4">
     </div>
     <!--Contact Us section-->
     <div id="contactus" class="container-fluid padding" id="accordion">
         <h2>Contact Us</h2>
         <div class="line-contactUs"></div>
         <div class="row padding">
-            <div class="col-lg-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestiae itaque debitis fugit eaque consequatur!
-                    Rerum ullam fugiat reprehenderit obcaecati! Esse architecto fugit cumque neque distinctio perspiciatis
-                    voluptas consequuntur tempora!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium quas tenetur ab sequi enim
-                    nisi culpa iste, totam nulla doloribus possimus sunt quam laborum et inventore quisquam voluptates repellat!</p>
+            <div class="col-lg-8">
+                <p>Mabrains wants to hear from you. Please don't hesitate to contact us for more information about our services.</p>
+                <p>Mabrains in looking for talented engineers in the field of AI. Please apply for avaliable positions. </p>
                 <br>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#hire-form">Hire Us</button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#apply-form">Apply for Job</button>
-                <div class="collapse" id="hire-form" data-parent="#contactus">
+                <button class="btn btn-primary" data-toggle="collapse" data-target="#hire-form">Contact us</button>
+<!--                 <button class="btn btn-primary" data-toggle="collapse" data-target="#apply-form">Apply for Job</button>
+ -->                <div class="collapse" id="hire-form" data-parent="#contactus">
                     <div class="container-fluid padding">
                         <div class="row">
                             <form id="hire-application" class="col-12 needs-validation" novalidate>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="firstNameHire">First Name</label>
-                                        <input type="text" class="form-control" id="firstNameHire" placeholder="First name" name="first_name" required>
+                                        <input type="text" class="form-control" style="font-family:'sans serif'" id="firstNameHire" placeholder="First name" name="first_name" required>
                                         <div class="valid-feedback"></div>
                                         <div class="invalid-feedback">Please provide a first name.</div>
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="lastNameHire">Last Name</label>
-                                        <input type="text" class="form-control" id="lastNameHire" placeholder="Last name" name="last_name" required>
+                                        <input type="text" class="form-control" style="font-family:'sans serif'" id="lastNameHire" placeholder="Last name" name="last_name" required>
                                         <div class="valid-feedback"></div>
                                         <div class="invalid-feedback">Please provide a last name.</div>
                                     </div>
@@ -469,20 +461,20 @@
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="emailHire">Email</label>
-                                        <input type="text" class="form-control" id="emailHire" placeholder="name@example.com" name="email" required>
+                                        <input type="text" class="form-control" style="font-family:'sans serif'" id="emailHire" placeholder="name@example.com" name="email" required>
                                         <div class="valid-feedback"></div>
                                         <div class="invalid-feedback">Please provide an email address.</div>
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="phoneNumberHire">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phoneNumberHire" placeholder="123-456-7890" name="phone_number" required>
+                                        <input type="tel" class="form-control" style="font-family:'sans serif'" id="phoneNumberHire" placeholder="123-456-7890" name="phone_number" required>
                                         <div class="valid-feedback"></div>
                                         <div class="invalid-feedback">Please provide a phone number.</div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="service">Service Wanted</label>
-                                    <textarea class="form-control" id="service" rows="3" name="service" required></textarea>
+                                    <textarea class="form-control" style="font-family:'sans serif'" id="service" rows="3" name="service" required></textarea>
                                     <div class="valid-feedback"></div>
                                     <div class="invalid-feedback">Please explain service needed.</div>
                                 </div>
@@ -589,61 +581,36 @@
 
     <!--footer section-->
     <footer>
-        <div class="container-fluid padding">
+            <h4 class="name text-center">Mabrains</h4>
+        <div class="container-fluid">
+            
             <div class="row text-center">
-                <div class="col-md-4">
-                    <h4 class="d-inline">Mabrains</h4>
-                    <hr class="light">
-                    <p>123-456-7890</p>
-                    <p>connect@mabrains.com</p>
+                <div class="col-12"> 
+                    <p class="connections">(+2)0115-791-1309</p>
+                    <p class="connections" style="font-family: 'sans serif'">connect&#64;mabrains.com</p>
                     <p>Cairo, Egypt</p>
                     <div class="social">
                         <h4 class="d-inline">Connect </h4>
-                        <a href="#">
+                        <a href="https://www.facebook.com/Mabrains-1121947307930386" target="blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/Mabrains1" target="blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.youtube.com/channel/UChn38Ql39sA2txp1ektTPqQ" target="blank">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/mabrains/" target="blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
+                        
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <hr class="light">
                     <h5>Working Hours</h5>
-                    <hr class="light">
-                    <p>Saturday: 9am - 5pm</p>
-                    <p>Thursday: 9am - 5pm</p>
-                    <p>Friday: closed</p>
+                    <p class="d-inline hours">Sunday - Thursday: 9am - 5pm.</p>
+
+                    <p class="d-inline hours">Friday, Saturday: closed.</p>
                 </div>
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h5>Website Map</h5>
-                    <hr class="light">
-                    <p>
-                        <a href="#home" class="nav-link">Home</a>
-                    </p>
-                    <p>
-                        <a href="#services" class="nav-link">Services</a>
-                    </p>
-                    <p>
-                        <a href="#about" class="nav-link">About</a>
-                    </p>
-                    <p>
-                        <a href="#apis" class="nav-link">APIS</a>
-                    </p>
-                    <p>
-                        <a href="#contactus" class="nav-link">Contact Us</a>
-                    </p>
-                    <p>
-                        <a href="#articles" class="nav-link">Articles</a>
-                    </p>
-                </div>
+                
                 <div class="col-12">
                     <hr class="light-100">
                     <h5>&copy; 2018 Mabrains Limited Liability Company</h5>
@@ -651,10 +618,12 @@
             </div>
         </div>
     </footer>
-    <script src="js/emailjs.js"></script>
+ 
     <script src="js/formValidation.js"></script>
     <script src="js/canvas.js"></script>
+    <script src="js/emailjs.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

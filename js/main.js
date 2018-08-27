@@ -22,19 +22,15 @@ window.onload = () => {
             );
         };  
         if (isInViewport(services)) {
-            console.log('Iam here')
             services.children[1].classList.add('lineMove')
         }
         if (isInViewport(apis)) {
-            console.log('Iam here')
-            apis.children[0].children[1].classList.add('lineMove')
+            apis.children[1].classList.add('lineMove')
         }
         if (isInViewport(contactUs)) {
-            console.log('Iam here')
             contactUs.children[1].classList.add('lineMove')
         }
         if (isInViewport(articles)) {
-            console.log('Iam here')
             articles.children[1].classList.add('lineMove')
         }
     }
@@ -54,19 +50,32 @@ window.onload = () => {
     const allLinks = document.getElementsByTagName('a')
     let scrollToElementInterval
     for (const link of allLinks) {
-        link.addEventListener('click', (e) => {
-            e.preventDefault()
-            let element = document.getElementById(e.target.textContent.split(' ').join('').toLowerCase())
-            scrollToElementInterval = setInterval(scrollToElement, 10);
-            function scrollToElement() { 
-                document.body.scrollTop += 50; // For Safari
-                document.documentElement.scrollTop += 50; // For Chrome, Firefox, IE and Opera
-                if  (element.getBoundingClientRect().top < 30) {
-                    clearInterval(scrollToElementInterval)
+        if (link.parentElement.tagName === "LI") {
+            link.addEventListener('click', (e) => {
+                e.preventDefault()
+                let element = document.getElementById(e.target.textContent.split(' ').join('').toLowerCase())
+                scrollToElementInterval = setInterval(scrollToElement, 10);
+                function scrollToElement() { 
+                    document.body.scrollTop += 50; // For Safari
+                    document.documentElement.scrollTop += 50; // For Chrome, Firefox, IE and Opera
+                    if  (element.getBoundingClientRect().top < 30) {
+                        clearInterval(scrollToElementInterval)
+                    }
                 }
-            }
-        }) 
+            }) 
+        }    
     }
+    window.addEventListener('resize', (e) => {
+        if (window.innerWidth <= 768) {
+            document.querySelector('.right').children[0].setAttribute('src', 'img/face-swapping3.jpg')
+        } else if (window.innerWidth > 1100) {
+            document.querySelector('.main').children[0].setAttribute('src', 'img/sentiment-analysis.jpeg')
+            document.querySelector('.right').children[0].setAttribute('src', 'img/face-swapping.jpg')
+        } else if (window.innerWidth <= 1100) {
+            document.querySelector('.main').children[0].setAttribute('src', 'img/sentiment-analysis2.jpeg')
+            document.querySelector('.right').children[0].setAttribute('src', 'img/face-swapping2.jpg')
+        }
+    })
 
 }
 
